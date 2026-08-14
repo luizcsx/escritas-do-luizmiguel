@@ -169,7 +169,7 @@
       .limit(10);
 
     if (error) { main.innerHTML = `<p class="state-msg">Erro: ${error.message}</p>`; return; }
-    if (!posts || !posts.length) { main.innerHTML = '<p class="state-msg">Nenhum post publicado ainda.</p>'; return; }
+    if (!posts || !posts.length) { main.innerHTML = '<p class="state-msg">Nenhuma escrita publicada ainda.</p>'; return; }
 
     const [latest, ...older] = posts;
     const cat = latest.categories;
@@ -191,7 +191,7 @@
     if (older.length) {
       html += `
         <div class="older-posts">
-          <div class="section-label">Posts anteriores</div>
+          <div class="section-label">Escritas anteriores</div>
           ${older.map(p => `
             <div class="post-list-item">
               <div class="post-list-left">
@@ -218,14 +218,14 @@
       .limit(1);
 
     if (error || !posts || !posts.length) {
-      main.innerHTML = `<a class="back-link" href="/">&larr; Voltar</a><p class="state-msg">Post não encontrado.</p>`;
+      main.innerHTML = `<a class="back-link" href="/">&larr; Voltar</a><p class="state-msg">Escrita não encontrada.</p>`;
       return;
     }
 
     const post = posts[0];
     const cat  = post.categories;
 
-    document.title = `${post.title} — Blog do Luiz Miguel`;
+    document.title = `${post.title} - Escritas do Luiz Miguel`;
 
     main.innerHTML = `
       <a class="back-link" href="/">&larr; Todos os posts</a>
@@ -252,7 +252,7 @@
     if (error) { main.innerHTML = `<p class="state-msg">Erro: ${error.message}</p>`; return; }
 
     const catName = found ? found.name : catSlug;
-    document.title = `${catName} — Blog do Luiz Miguel`;
+    document.title = `${catName} - Escritas do Luiz Miguel`;
 
     let html = `
       <a class="back-link" href="/">&larr; Todos os posts</a>
@@ -260,7 +260,7 @@
     `;
 
     if (!posts || !posts.length) {
-      html += '<p class="state-msg">Nenhum post nessa categoria ainda.</p>';
+      html += '<p class="state-msg">Nenhuma escrita nessa categoria ainda.</p>';
     } else {
       html += posts.map(p => `
         <div class="post-list-item">
