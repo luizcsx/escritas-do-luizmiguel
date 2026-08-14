@@ -2,7 +2,7 @@
 
 Bem-vindo(a) a este repositório. Este é o repositório do meu blog pessoal de reflexões, crônicas e outros escritos.
 
-## Sobre o Blog
+## Sobre o Repositório
 O objetivo deste espaço é registrar os meus pensamentos diários, crônicas sobre o cotidiano e reflexões sobre tecnologia, cultura e amadurecimento. Os textos são escritos de forma autêntica e pessoal, misturando observações do dia a dia com visões próprias sobre o mundo.
 
 ## Autor
