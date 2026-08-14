@@ -1,4 +1,4 @@
-# Blog do Luiz Miguel
+# Escritas do Luiz Miguel
 
 Bem-vindo(a) a este repositório. Este é o repositório do meu blog pessoal de reflexões, crônicas e outros escritos.
 
